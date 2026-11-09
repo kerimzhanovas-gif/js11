@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Персонажи — Школа Монстров</title>
+    <link rel="icon" href="favicon/favicon.ico" sizes="96x96">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <img class="logo-img" src="images/logo.png" alt="Monster High">
+        <p>Ученики Школы Монстров</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="characters.html" class="active">Персонажи</a>
+        <a href="favorites.html">Избранное</a>
+        <a href="history.html">История</a>
+        <a href="pets.html">Питомцы</a>
+        <a href="style.html">Стиль</a>
+        <a href="video.html">Видео</a>
+        <a href="tests.html">Тесты</a>
+        <a href="rules.html">Правила</a>
+        <a href="about.html">О сайте</a>
+    </nav>
+    <main>
+        <h2>Главные ученики школы</h2>
+        <p>Нажмите на карточку, чтобы узнать о персонаже больше.</p>
+        <div class="toolbar">
+            <button id="add-btn" class="btn-add" type="button">+ Добавить персонажа</button>
+            <button id="reset-btn" class="btn-reset" type="button">↺ Сбросить</button>
+        </div>
+        <div id="char-grid" class="char-grid"></div>
+    </main>
+    <div id="detail-section" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-btn" class="modal-close">&times;</button>
+            <div id="detail-card"></div>
+        </div>
+    </div>
+<!-- добавление и изменение персонажа -->
+    <div id="form-section" class="modal hidden">
+        <div class="modal-content">
+            <button id="form-close-btn" class="modal-close" type="button">&times;</button>
+            <h2 id="form-title">Новый персонаж</h2>
+            <form id="char-form" class="reg-form char-form" novalidate>
+                <input type="hidden" id="char-id">
+                <div class="form-row">
+                    <label for="char-name">Имя</label>
+                    <input type="text" id="char-name" placeholder="Венера Макфлайтрап">
+                    <span class="field-error" id="char-name-error"></span>
+                </div>
+                <div class="form-row">
+                    <label for="char-title">Кто она</label>
+                    <input type="text" id="char-title" placeholder="Дочь Растения-монстра">
+                    <span class="field-error" id="char-title-error"></span>
+                </div>
+                <div class="form-row">
+                    <label for="char-color">Цвет карточки</label>
+                    <select id="char-color">
+                        <option value="c-frankie">Голубой</option>
+                        <option value="c-draculaura">Розовый</option>
+                        <option value="c-clawdeen">Фиолетовый</option>
+                        <option value="c-lagoona">Бирюзовый</option>
+                        <option value="c-cleo">Золотой</option>
+                        <option value="c-ghoulia">Зелёный</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="char-image">Картинка (путь)</label>
+                    <input type="text" id="char-image" placeholder="images/venus.png">
+                </div>
+                <div class="form-row">
+                    <label for="char-desc">Описание</label>
+                    <textarea id="char-desc" rows="4" placeholder="Расскажите о персонаже"></textarea>
+                    <span class="field-error" id="char-desc-error"></span>
+                </div>
+                <div class="form-row">
+                    <label for="char-pet">Питомец</label>
+                    <input type="text" id="char-pet" placeholder="Не обязательно">
+                </div>
+                <div class="form-row">
+                    <label for="char-feature">Особенность</label>
+                    <input type="text" id="char-feature" placeholder="Не обязательно">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Сохранить</button>
+                    <button type="button" id="form-cancel" class="btn-cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 Учебный проект Monster High</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

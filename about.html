@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Школа Монстров</title>
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <img class="logo-img" src="images/logo.png" alt="Monster High">
+        <p>О проекте</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="characters.html">Персонажи</a>
+        <a href="favorites.html">Избранное</a>
+        <a href="history.html">История</a>
+        <a href="pets.html">Питомцы</a>
+        <a href="style.html">Стиль</a>
+        <a href="video.html">Видео</a>
+        <a href="tests.html">Тесты</a>
+        <a href="rules.html">Правила</a>
+        <a href="about.html" class="active">О сайте</a>
+    </nav>
+    <main>
+        <h2>О сайте</h2>
+        <p>Это фанатский сайт, посвящённый вселенной Monster High. Он не связан с компанией-правообладателем и создан в учебных целях.</p>
+        <p>Все изображения и товарные знаки принадлежат их владельцам.</p>
+        <!-- ССЫЛКА: укажите источники картинок, например <a href="https://..." target="_blank">источник</a> -->
+        <p>Автор проекта: Керимжанова Сезим, IT-125</p>
+        <p>Связаться: kerimzhanova_s@iuca.kg </p>
+        <h2 style="margin-top: 25px;">Стань учеником школы</h2>
+        <p>Заполните анкету:</p>
+        <!-- novalidate отключает встроенную проверку браузера, чтобы работала наша на JavaScript -->
+        <form id="register-form" class="reg-form" novalidate>
+            <div class="form-row">
+                <label for="fio">ФИО</label>
+                <input type="text" id="fio" placeholder="Хасанова Руфина Равильевна" autocomplete="name">
+                <span class="field-error" id="fio-error"></span>
+            </div>
+            <div class="form-row">
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone" placeholder="+996 123 456 789" autocomplete="tel">
+                <span class="field-error" id="phone-error"></span>
+            </div>
+            <div class="form-row">
+                <label for="email">Почта</label>
+                <input type="text" id="email" placeholder="example@example.com" autocomplete="email">
+                <span class="field-error" id="email-error"></span>
+            </div>
+            <button type="submit" class="btn-submit">Отправить</button>
+            <p id="form-result" class="form-result"></p>
+        </form>
+    </main>
+    <footer>
+        <!-- ССЫЛКА: при желании добавьте ссылки на соцсети -->
+        <p>© 2026 Учебный проект Monster High</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

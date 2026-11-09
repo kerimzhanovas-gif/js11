@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная — Школа Монстров</title>
+    <!-- ССЫЛКА: иконка вкладки браузера. Положите файл в images/favicon.png -->
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <!-- ИЗОБРАЖЕНИЕ: логотип Monster High (images/logo.png).
+             Если логотипа нет, удалите <img> и оставьте только <h1>. -->
+        <img class="logo-img" src="images/logo.png" alt="Monster High">
+        <p>Будь собой. Будь уникальным. Будь монстром!</p>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="characters.html">Персонажи</a>
+        <a href="favorites.html">Избранное</a>
+        <a href="history.html">История</a>
+        <a href="pets.html">Питомцы</a>
+        <a href="style.html">Стиль</a>
+        <a href="video.html">Видео</a>
+        <a href="tests.html">Тесты</a>
+        <a href="rules.html">Правила</a>
+        <a href="about.html">О сайте</a>
+    </nav>
+    <section class="hero">
+        <div class="slider">
+            <!-- ИЗОБРАЖЕНИЕ: широкий баннер с героинями (images/banner.jpg, ~1200x400) -->
+            <img src="images/banner.jpg" alt="Баннер Школы Монстров">
+            <a class="slider-arrow prev" href="#">‹</a>
+            <div class="slider-text">
+                Новые приключения ждут!<br>Погрузись в мир Школы Монстров!
+                <br><!-- ССЫЛКА: куда ведёт кнопка баннера -->
+                <a href="characters.html">Познакомиться с учениками</a>
+            </div>
+            <a class="slider-arrow next" href="#">›</a>
+        </div>
+        <div class="side-box">
+            <h3>Новости школы</h3>
+            <ul>
+                <!-- ССЫЛКА: замените # на страницу новости -->
+                <li><a href="#">Новая коллекция «Призрачные сны»!</a></li>
+                <li><a href="#">Событие: Бал Монстров</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="two-col">
+        <section>
+            <h2 class="section-title">⚡ Наши звёзды ⚡</h2>
+            <div class="char-grid">
+            <div class="char-card c-frankie">
+                <div class="char-img-stub"><img src="images/frankie.png" alt="Фрэнки Штейн"></div>
+                <h3>Фрэнки Штейн</h3>
+                <p>Дочь Франкенштейна</p>
+                <a class="btn-more" href="characters.html">Узнать больше</a>
+            </div>
+            <div class="char-card c-draculaura">
+                <div class="char-img-stub"><img src="images/draculaura.png" alt="Дракулаура"></div>
+                <h3>Дракулаура</h3>
+                <p>Дочь Дракулы</p>
+                <a class="btn-more" href="characters.html">Узнать больше</a>
+            </div>
+            <div class="char-card c-clawdeen">
+                <div class="char-img-stub"><img src="images/clawdeen.png" alt="Клодин Вульф"></div>
+                <h3>Клодин Вульф</h3>
+                <p>Дочь Оборотня</p>
+                <a class="btn-more" href="characters.html">Узнать больше</a>
+            </div>
+            <div class="char-card c-lagoona">
+                <div class="char-img-stub"><img src="images/lagoona.png" alt="Лагуна Блю"></div>
+                <h3>Лагуна Блю</h3>
+                <p>Дочь Морского Монстра</p>
+                <a class="btn-more" href="characters.html">Узнать больше</a>
+            </div>
+            </div>
+            <div class="news-banner" style="margin-top: 25px;">
+                <p>⚡ Главная новость: Подготовка к балу Монстров в самом разгаре! Скорее проверяйте разделы сайта. ⚡</p>
+            </div>
+        </section>
+        <aside>
+            <h3 style="text-align:center; font-size:14px; margin-bottom:14px;">ПОСЛЕДНИЕ ИГРЫ И ВИДЕО</h3>
+            <!-- ССЫЛКА + ИЗОБРАЖЕНИЕ: превью видео (images/video1.jpg ...), href ведёт на video.html или на YouTube -->
+            <a class="video-item" href="video.html"><img src="images/video1.jpg" alt=""><span>Квест Клодин: побег из музея</span></a>
+            <a class="video-item" href="video.html"><img src="images/video2.jpg" alt=""><span>Секреты Дракулауры</span></a>
+            <a class="video-item" href="video.html"><img src="images/video3.jpg" alt=""><span>Тайна каменного монстра</span></a>
+        </aside>
+    </div>
+    <footer>
+        <!-- ССЫЛКА: при желании добавьте ссылки на соцсети -->
+        <p>© 2026 Учебный проект Monster High</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
